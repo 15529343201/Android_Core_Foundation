@@ -33,3 +33,14 @@
 - 5.x版本:趋于成熟版本,重点在平台的整合(手机、平板、电视、穿戴设备、嵌入设备),支持64位cpu,默认在art虚拟机中运行,解决版本碎片化,原声版本(小米、华为、联想、htc)
 ### Android应用场景
 - 手机、平板、嵌入式等
+## 3.Android体系结构
+### 体系结构
+### JVM/DVM/ART 虚拟机
+- jvm与dvm
+
+&emsp;&emsp;相同点:都是在虚拟机运行,运行的都是字节码<br>
+&emsp;&emsp;不同点:<br>
+&emsp;&esmp;&emsp;&emsp;程序结构不同:jvm运行的是class字节码,而dvm运行的是dex字节码<br>
+&emsp;&esmp;&emsp;&emsp;系统架构不同:jvm基于内存的,基于堆栈,而dvm基于的是寄存器,及基于cpu<br>
+
+
