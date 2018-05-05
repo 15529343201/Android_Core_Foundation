@@ -42,5 +42,6 @@
 &emsp;&emsp;不同点:<br>
 &emsp;&emsp;&emsp;程序结构不同:jvm运行的是class字节码,而dvm运行的是dex字节码<br>
 &emsp;&emsp;&emsp;系统架构不同:jvm基于内存的,基于堆栈,而dvm基于的是寄存器,及基于cpu<br>
+- dvm和art虚拟机:ART模式是Android runtime的简称,在Android4.4版本后出现,通过在安装应用程序时,自动对程序进行代码预读取编译,让程序直接编译成机器语言,并且把它保存起来,免去了Dalvik模式要时时转换代码,实现高效率、省电、手机运行流畅。ART是虚拟机,只是在安装apk时,提前编译而已。
 
 
