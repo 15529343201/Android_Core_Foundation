@@ -19,3 +19,8 @@
 - Andorid:java,78%
 - IOS:objective-c
 - Window phone:1%
+
+## 2.Andorid历史与发展
+### Android大事件
+- 2005年google收购了android公司
+- 2007年开放手机联盟成立,13家大公司联盟
