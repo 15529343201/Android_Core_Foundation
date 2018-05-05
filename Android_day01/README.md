@@ -48,6 +48,9 @@
 ### 工具
 - jdk,eclipse,adt,android sdk（soft develper kit)目前业界使用最多,android bundle for windows:合集版
 - android studio:耗内存、通过maven来管理android项目 png-->>.9.png格式,拉伸时边角不会失真
+### sdk的更新
+### sdk目录结构
+## 2.创建AVD模拟器
 
 
 
