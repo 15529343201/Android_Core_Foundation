@@ -40,7 +40,7 @@
 
 &emsp;&emsp;相同点:都是在虚拟机运行,运行的都是字节码<br>
 &emsp;&emsp;不同点:<br>
-&emsp;&esmp;&emsp;&emsp;程序结构不同:jvm运行的是class字节码,而dvm运行的是dex字节码<br>
-&emsp;&esmp;&emsp;&emsp;系统架构不同:jvm基于内存的,基于堆栈,而dvm基于的是寄存器,及基于cpu<br>
+&emsp;&emsp;&emsp;程序结构不同:jvm运行的是class字节码,而dvm运行的是dex字节码<br>
+&emsp;&emsp;&emsp;系统架构不同:jvm基于内存的,基于堆栈,而dvm基于的是寄存器,及基于cpu<br>
 
 
