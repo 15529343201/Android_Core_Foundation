@@ -20,17 +20,18 @@ Set visibility       设置是否可见
         gone： 不可以，不分配空间，但是还存在的
 ```
 ### 4. ViewGroup
-      ViewGroup：视图组，它是特殊的View，能够容纳其他的View（子控件)，
-      * 分为
-	  1.布局：界面布局
-	  2. 特殊的容器，特殊的功能
-	    ViewPager
-      * ViewGroup常用的方法
+&emsp;&emsp;ViewGroup：视图组，它是特殊的View，能够容纳其他的View(子控件),分为:<br>
+- 1.布局：界面布局
+- 2. 特殊的容器，特殊的功能
+
+```
+ViewPager
+ViewGroup常用的方法
        addView(): 向视图组添加View
        removeView():从视图组移去View
        getChildCount：获得视图组子控件的数量
        getChildAt()  : 获得具体某个子控件
-
+```
 
 ## 二、常用系统UI控件
     1. 有layout与无layout属性修饰
