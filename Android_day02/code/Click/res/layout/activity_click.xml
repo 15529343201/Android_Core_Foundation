@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ClickActivity" >
+
+    <Button
+        android:id="@+id/anonymous_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="匿名类" />
+
+    <Button
+        android:id="@+id/inner_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/anonymous_btn"
+        android:layout_below="@+id/anonymous_btn"
+        android:layout_marginTop="33dp"
+        android:text="私有类" />
+
+    <Button
+        android:id="@+id/xml_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inner_btn"
+        android:layout_centerVertical="true"
+        android:onClick="byXml"
+        android:text="xml" />
+
+    <Button
+        android:id="@+id/activity_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/xml_btn"
+        android:layout_below="@+id/xml_btn"
+        android:layout_marginTop="38dp"
+        android:text="activity" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/xml_btn"
+        android:layout_below="@+id/activity_btn"
+        android:layout_marginTop="36dp"
+        android:clickable="true"
+        android:onClick="clickTextView"
+        android:text="文件筐" />
+
+</RelativeLayout>

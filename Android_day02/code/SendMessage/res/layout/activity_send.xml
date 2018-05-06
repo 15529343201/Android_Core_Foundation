@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pes"
+    android:paddingRight="10dp"
+    tools:context=".SendActivity" >
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="22sp"
+        android:layout_marginTop="15dp"
+        android:text="@string/send_message" />
+    <ImageView 
+        android:id="@+id/icon_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_apple"
+        android:layout_below="@+id/title_tv"
+        android:layout_marginTop="40dp"
+        />
+    <!-- singleLine:单行显示 
+         inputType: 输入方式
+         layout_toRightOf: 在哪个控件的右边
+         minLines:最小行数
+         layout_alignLeft:与哪个控件右边对齐
+    -->
+    <EditText 
+        android:id="@+id/number_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:inputType="phone"
+        android:layout_below="@id/title_tv"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/icon_iv"
+        android:layout_marginLeft="5dp"
+        android:hint="@string/please_input_number"
+        />
+    <EditText 
+        android:id="@+id/body_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="6"
+        android:layout_below="@id/number_et"
+        android:layout_alignLeft="@+id/number_et"
+        android:layout_marginTop="10dp"
+        android:hint="@string/please_input_body"
+        />
+    <Button 
+        android:id="@+id/send_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/send"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        />
+
+</RelativeLayout>

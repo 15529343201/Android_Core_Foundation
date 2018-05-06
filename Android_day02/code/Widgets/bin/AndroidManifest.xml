@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.it.widgets"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.it.widgets.MainActivity"
+            android:icon="@drawable/f076"
+            android:label="@string/app_name" >
+              <!-- 表示该activity会在应用程序等级列表中展示， 可以通过列表直接导航到该Activity中 -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--  
+        <activity
+            android:name="cn.it.widgets.ThreeActivity"
+            android:icon="@drawable/f110"
+            android:label="@string/title_activity_three" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.it.widgets.OtherActivity"
+            android:icon="@drawable/emoji_058">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        
+        <activity
+            android:name="cn.it.widgets.ThreeActivity"
+            android:icon="@drawable/f110"
+            android:label="@string/title_activity_three" >
+        </activity>
+        <activity
+            android:name="cn.it.widgets.OtherActivity"
+            android:icon="@drawable/emoji_058" >
+        </activity>
+        
+    </application>
+
+</manifest>
