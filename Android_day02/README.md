@@ -7,18 +7,19 @@ www.github.com //开源框架  xutils - smartImageView -afinal
 - 交互 ： View捕获事件，由WindowManger传递消息（控件，事件的类型），android框架再回调Activity的相应方式，实现与用户的交互
 ### 2. Window
 &emsp;&emsp;Window是Android中的窗口，表示顶级窗口，也就是主窗口，每一个主窗口都拥有一个View，称之为DecorView(装饰视图)，它是主窗口的顶级View(DecorView必须是一个布局容器，因为它要容纳其它的View)。 当Activtity调用setContentView()时，实际就是调用Window对象的setContentView()方法，执行该方法，把用户定义的View添加到DecorView中，最终完成对View的展示。<br>
-  3. View
-      视图，是用户接口组件的基本构建块，它在屏幕中占用一个矩形区域，它是所有UI控件的基类，如一个按钮或文本框。View负责图形界面渲染及事件处理，Android为我们提供了一系列的标准UI控件供我们直接使用，同时，我们也可以通过继承于View或View的子类，来实现自定义控件
-      & 对View常用的操作
-        Set properties       设置属性  
-        Set focus            设置焦点
-        Set listeners        设置监听（点击、长按、触摸）
-        Set visibility       设置是否可见
-             visible： 可见
-            invisible：不可见，但是分配空间
-            gone： 不可以，不分配空间，但是还存在的
-
-  4. ViewGroup
+### 3. View
+&emsp;&emsp;视图，是用户接口组件的基本构建块，它在屏幕中占用一个矩形区域，它是所有UI控件的基类，如一个按钮或文本框。View负责图形界面渲染及事件处理，Android为我们提供了一系列的标准UI控件供我们直接使用，同时，我们也可以通过继承于View或View的子类，来实现自定义控件<br>
+&emsp;&emsp;对View常用的操作:<br>
+```
+Set properties       设置属性  
+Set focus            设置焦点
+Set listeners        设置监听（点击、长按、触摸）
+Set visibility       设置是否可见
+        visible： 可见
+        invisible：不可见，但是分配空间
+        gone： 不可以，不分配空间，但是还存在的
+```
+### 4. ViewGroup
       ViewGroup：视图组，它是特殊的View，能够容纳其他的View（子控件)，
       * 分为
 	  1.布局：界面布局
