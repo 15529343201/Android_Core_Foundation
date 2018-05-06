@@ -61,6 +61,13 @@
 - 屏幕密度:desity ppi:p-per-inch ldpi:120 mdpi:160 hdpi:240 xhdpi:320 480 640 标清:mdpi:160
 - 手机制式:1G(模拟信息 波形图)->2G->3G(wcdma,cdma2000,td-scdma)->4G(fdd-lte,td-lte)->5G 
 - cpu,内存
+# 三、第一个Android应用程序
+## 1.创建应用流程
+- 设计界面
+- 写代码、实现功能
+- 打包、安装、测试、部署
+## 2.Android应用程序结构介绍
+- android应用程序结构由四大组件构成(acitvity,Service,ContentProvider,BroadcastReceiver),每一个模块都是相互独立的,有着不同的入口,android框架依据这些入口,进入到该应用中,在AndroidManifest.xml中注册,它们松耦合的组合在一起,从而定义应用的整体功能
 
 
 
