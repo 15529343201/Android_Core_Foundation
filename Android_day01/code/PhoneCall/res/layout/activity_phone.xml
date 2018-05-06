@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneActivity" >
+   <!--
+      1.layout_width: 宽度： 
+       wrap_content：包裹内容
+       match_parent：填充父控件剩余的宽度或者高度
+                绝对值： 50dp
+      2. padding:内边距 ：控件内部元素的修饰
+      3. layout_marginTop：与顶部的外边距 ：控件与控件或者控件与父控件的边距修饰
+      4.drawableLeft : 在控件的左边设置一个图片属性
+      5. hint :提示信息
+     -->
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/encroid_progress" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:text="@string/tel_number" />
+
+    <EditText
+        android:id="@+id/number_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:drawableLeft="@drawable/emoji_058"
+        android:drawableRight="@drawable/btn_mood_very_happy"
+        android:hint="@string/input_tel_number"
+        android:inputType="phone" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/call_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/number_et"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="62dp"
+        android:text="@string/call" />
+
+</RelativeLayout>
