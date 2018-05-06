@@ -61,20 +61,21 @@ ViewGroup常用的方法
 	//view.setBackgroundResource(resid) // android:backgroud
 	setContentView(view);
 ```
-
-### 2.  布局的两种类型
-      * common layout :通用布局 ，静态布局
-         以唯一的方式来显示潜入到该布局中的子控件，一般用于前期可以确定的界面设置
-        线性、相对、帧布局、 表格、网格、webView ：web视图
-      * building layout by adapter ：动态构建布局
-         前期不能确定界面
-       实现 ： AdapterView（适配器视图）与Adapter组合展示一个动态的布局，它设计也是遵循mvc模式
-          V: AdapterView ：它的子类： ListView、GridView、Spinner 
+### 2.布局的两种类型
+```
+common layout :通用布局 ，静态布局
+    以唯一的方式来显示潜入到该布局中的子控件，一般用于前期可以确定的界面设置
+    线性、相对、帧布局、 表格、网格、webView ：web视图
+building layout by adapter ：动态构建布局
+    前期不能确定界面
+实现:AdapterView（适配器视图）与Adapter组合展示一个动态的布局，它设计也是遵循mvc模式
+        V: AdapterView ：它的子类： ListView、GridView、Spinner 
               展示界面，监听列表项
-          C： Adapter： 装配数据，装配布局，数据一般从数据库或者网络中来
-          Model ： List<Contact> 
+        C： Adapter： 装配数据，装配布局，数据一般从数据库或者网络中来
+        Model ： List<Contact> 
                    List<Map>  key1=id   key2=name  key3=icon
-           
+```
+         
 ## 四、常用布局
 
    1.LinearLayout 
