@@ -41,23 +41,25 @@ ViewGroup常用的方法
     layout_gravity
     gravity
 ```
-   
-
 ## 三、布局
 ### 1.  布局的实现方式 
-      * xml方式
-         - 设置xml界面
-          * attribute ：属性  id 、属性等
-          * gravity ：位置, 上下左右中
-          * size，margin，padding ：大小 50dp 、外边距、内边距
-         - 加载xml布局文件
-            Activity.setContentView(layoutResId)
-      * 代码方式
-        ImageView view=new ImageView(this);
-		view.setImageResource(R.drawable.pic8);//设置图片的前景   android:src 
-//		view.setBackgroundResource(resid) // android:backgroud
-		setContentView(view);
-   2.  布局的两种类型
+- xml方式
+```
+    - 设置xml界面
+		* attribute ：属性  id 、属性等
+        * gravity ：位置, 上下左右中
+        * size，margin，padding ：大小 50dp 、外边距、内边距
+    - 加载xml布局文件
+        Activity.setContentView(layoutResId)
+```
+- 代码方式
+```
+    ImageView view=new ImageView(this);
+	view.setImageResource(R.drawable.pic8);//设置图片的前景   android:src 
+	//view.setBackgroundResource(resid) // android:backgroud
+	setContentView(view);
+```
+### 2.  布局的两种类型
       * common layout :通用布局 ，静态布局
          以唯一的方式来显示潜入到该布局中的子控件，一般用于前期可以确定的界面设置
         线性、相对、帧布局、 表格、网格、webView ：web视图
