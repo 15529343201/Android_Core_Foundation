@@ -22,7 +22,7 @@ Set visibility       设置是否可见
 ### 4. ViewGroup
 &emsp;&emsp;ViewGroup：视图组，它是特殊的View，能够容纳其他的View(子控件),分为:<br>
 - 1.布局：界面布局
-- 2. 特殊的容器，特殊的功能
+- 2.特殊的容器，特殊的功能
 
 ```
 ViewPager
