@@ -32,17 +32,19 @@ ViewGroup常用的方法
        getChildCount：获得视图组子控件的数量
        getChildAt()  : 获得具体某个子控件
 ```
-
 ## 二、常用系统UI控件
-    1. 有layout与无layout属性修饰
-       - 有layout，它是布局属性的修饰，参照的是其他的控件或者父控件
-       - 没有layout，它是对本身内部的元素的属性修饰
-         layout_gravity
-          gravity
+### 1. 有layout与无layout属性修饰
+- 有layout，它是布局属性的修饰，参照的是其他的控件或者父控件
+- 没有layout，它是对本身内部的元素的属性修饰
+
+```
+    layout_gravity
+    gravity
+```
    
 
 ## 三、布局
-   1.  布局的实现方式 
+### 1.  布局的实现方式 
       * xml方式
          - 设置xml界面
           * attribute ：属性  id 、属性等
