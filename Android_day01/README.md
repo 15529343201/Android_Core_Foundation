@@ -80,6 +80,13 @@
 - 2.实现交互
 - 3.安装、运行
 # 五、ddms与adb
+## 1.ddms(dalvik debug monitor service:dvm虚拟机调试监视服务)
+## 2.adb:android调试桥,它是windows与android系统的桥梁,通过它可以安装、卸载程序等。
+- adb shell:进入到linux的shell脚本交互
+- adb install <文件名> qqw.apk qq.apk
+- adb uninstall <包名> cn.tencent.qq
+- adb -s 模拟器名称 命令
+# 六、布局
 
 
 
