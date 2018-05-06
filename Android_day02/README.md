@@ -46,11 +46,11 @@ ViewGroup常用的方法
 - xml方式
 
 ```
-    - 设置xml界面
-		* attribute ：属性  id 、属性等
-        * gravity ：位置, 上下左右中
-        * size，margin，padding ：大小 50dp 、外边距、内边距
-    - 加载xml布局文件
+    设置xml界面
+		attribute ：属性  id 、属性等
+        gravity ：位置, 上下左右中
+        size，margin，padding ：大小 50dp 、外边距、内边距
+    加载xml布局文件
         Activity.setContentView(layoutResId)
 ```
 - 代码方式
