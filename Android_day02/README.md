@@ -5,10 +5,8 @@ www.github.com //开源框架  xutils - smartImageView -afinal
 &emsp;&emsp;Activity android的四大组件之一，唯一能展示界面的组件，用于展示一个与用户交互的界面，它遵循MVC模式 ，Activity扮演Controller 控制器角色<br>
 - 展示界面  ：通过内部Widnow.setContentView()展示
 - 交互 ： View捕获事件，由WindowManger传递消息（控件，事件的类型），android框架再回调Activity的相应方式，实现与用户的交互
-        
-   
-  2. Window
-     Window是Android中的窗口，表示顶级窗口，也就是主窗口，每一个主窗口都拥有一个View，称之为DecorView(装饰视图)，它是主窗口的顶级View(DecorView必须是一个布局容器，因为它要容纳其它的View)。 当Activtity调用setContentView()时，实际就是调用Window对象的setContentView()方法，执行该方法，把用户定义的View添加到DecorView中，最终完成对View的展示。
+### 2. Window
+&emsp;&emsp;Window是Android中的窗口，表示顶级窗口，也就是主窗口，每一个主窗口都拥有一个View，称之为DecorView(装饰视图)，它是主窗口的顶级View(DecorView必须是一个布局容器，因为它要容纳其它的View)。 当Activtity调用setContentView()时，实际就是调用Window对象的setContentView()方法，执行该方法，把用户定义的View添加到DecorView中，最终完成对View的展示。<br>
   3. View
       视图，是用户接口组件的基本构建块，它在屏幕中占用一个矩形区域，它是所有UI控件的基类，如一个按钮或文本框。View负责图形界面渲染及事件处理，Android为我们提供了一系列的标准UI控件供我们直接使用，同时，我们也可以通过继承于View或View的子类，来实现自定义控件
       & 对View常用的操作
