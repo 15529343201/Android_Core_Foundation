@@ -70,11 +70,16 @@
 - android应用程序结构由四大组件构成(acitvity,Service,ContentProvider,BroadcastReceiver),每一个模块都是相互独立的,有着不同的入口,android框架依据这些入口,进入到该应用中,在AndroidManifest.xml中注册,它们松耦合的组合在一起,从而定义应用的整体功能
 ## 3.项目工程目录分析
 ## 4.Android应用运行流程
+- 编译打包生成apk:java-->class-->classes.dex(de.bat)-->apk(aapt)-->apk(签名,默认debug签名)
+- 通过adb(android debug bridge:android调试条)把apk上传到模拟器或者真机中,位置:/data/app/目录
+- 再解析AndroidManifest.xml文件,获取包名,版本信息,组件信息,权限信息,支持的最低版本与最高版本,再创建文件夹/data/data/<当前的package>,用于存放该应用的私有数据
+- 把包等信息写入到/data/system/packages.xml文件中,实现注册
 - 运行:Android系统是一个多用户的Linux系统,应用一旦安装,系统为每个应用分配一个独立的Linux用户ID,当用户点击应用程序图标或者导航到该应用的组件,Android框架会创建一个虚拟机实例,开启一个进程,创建一个主线程(UI线程),再实例化入口组件,进入组件的生命周期
 # 四、应用体验:电话拨号器
 - 1.设置界面
 - 2.实现交互
 - 3.安装、运行
+# 五、ddms与adb
 
 
 
