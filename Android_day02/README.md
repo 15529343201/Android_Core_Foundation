@@ -44,6 +44,7 @@ ViewGroup常用的方法
 ## 三、布局
 ### 1.  布局的实现方式 
 - xml方式
+
 ```
     - 设置xml界面
 		* attribute ：属性  id 、属性等
@@ -53,6 +54,7 @@ ViewGroup常用的方法
         Activity.setContentView(layoutResId)
 ```
 - 代码方式
+
 ```
     ImageView view=new ImageView(this);
 	view.setImageResource(R.drawable.pic8);//设置图片的前景   android:src 
