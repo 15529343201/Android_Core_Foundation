@@ -55,31 +55,35 @@
 ```
     
 ## 二、高级UI控件
-
-  1.ToggleButton 
+### 1.ToggleButton 
+```
     开关按钮 ，它是CompundButton的子类 
     接口： CompundButton.OnCheckedChangeListener 
             开关按钮关闭、打开 状态的提示文本  
      xml属性： android:textOff=""
              android:textOn=""
     方法： toggle() :  取反
-  2.ProgressBar  ：进度条 
+```
+### 2.ProgressBar  ：进度条 
+```
      setMax(10) ：设置进度的最大值
-
-  3.ScrollView   ：滚屏视图
+```
+### 3.ScrollView   ：滚屏视图
+```
     它是FrameLayout的子类，而且只能拥有一个直接的子节点（子控件），它只支持垂直滚屏
    对于水平滚屏：HorizontalScrollView  ，它是FrameLayout的子类，只支持水平滚屏
 
   
 界面、ui控件， 布局，固定的布局
- 
-  4.ListView :列表视图
+```
+### 4.ListView :列表视图
+```
     动态布局： 用AdapterView与Adapter展示一个动态的布局
     ListView：列表视图 ，它是AdapterView的派生类 ，是非常重要的控件，在开发中经常使用
     作用： 与Adapter展示一个结构相同的批量（动态）的数据
       - 展示列表项
       - 监听列表项
-
+```
 
 
 ##  练习 ： 
