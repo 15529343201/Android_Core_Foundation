@@ -1,0 +1,22 @@
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:verticalSpacing="30dp"
+    android:horizontalSpacing="25dp"
+    android:id="@+id/app_lstView"
+    android:background="#000000"
+    android:numColumns="4"
+    tools:context=".AppListActivity" >
+    <!--divider: 列表项的分割线  。可以设置图片和颜色 
+        dividerHeight：分割线的高度
+     verticalSpacing：网格子控件的垂直间距
+     horizontalSpacing：网格子控件的水平间距
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="wenb"
+          />
+           -->
+</GridView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dialog</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="perform">确定</string>
+    <string name="cancel">取消</string>
+    <string-array name="android_versions">
+        <item >棒棒糖</item>
+        <item >奇巧巧克力</item>
+        <item >果冻豆</item>
+        <item >冰淇淋三明治</item>
+        <item >蜂巢</item>
+        <item >姜饼</item>
+        <item >冻酸奶</item>
+    </string-array>
+
+</resources>

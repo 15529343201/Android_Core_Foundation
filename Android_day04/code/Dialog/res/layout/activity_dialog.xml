@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout"
+    tools:context=".DialogActivity" >
+
+    <Button
+        android:id="@+id/normal_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="标准对话框" />
+
+    <Button
+        android:id="@+id/menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/normal_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="菜单式对话框" />
+
+    <Button
+        android:id="@+id/mul_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="复选对话框" />
+
+    <Button
+        android:id="@+id/diy_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mul_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="自定义对话框" />
+
+</RelativeLayout>
