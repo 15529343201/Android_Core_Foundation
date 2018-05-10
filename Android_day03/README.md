@@ -6,13 +6,11 @@
   3. 监听事件
 
 ## 一、Android事件驱动机制
- 
-
-  1. 事件监听器
-      一个事件监听器是View类中一个包含单一回调方法的接口。当注册了监听器的View发生了对应的监听事件时，Android框架就会回调相应的监听方法，实现与用户的交互。
-
-  2.常见的事件类型
-     * 点击事件
+### 1. 事件监听器
+&emsp;&emsp;一个事件监听器是View类中一个包含单一回调方法的接口。当注册了监听器的View发生了对应的监听事件时，Android框架就会回调相应的监听方法，实现与用户的交互。
+### 2.常见的事件类型
+#### 点击事件
+```
         控件： View 
         接口： View.OnClickListener
 	     实现方式：
@@ -20,8 +18,9 @@
 		 2. 私有内部类
 		 3. xml中设置onClick属性
 		 4. Activity实现点击监听接口
-
-     * 选择事件(单选、复选、下拉选择)
+```
+#### 选择事件(单选、复选、下拉选择)
+```
 	     1. 复选 :
 	        控件： CheckBox 
             接口： CompoundButton.OnCheckedChangeListener   状态改变的监听
@@ -34,7 +33,9 @@
 	     3. 下拉选择
 	        控件 ： Spinner 
             接口： AdapterView.OnItemSelecedListener 
-     * 触摸、长按 
+```
+#### 触摸、长按 
+```
         1. 触摸
            - 控件  View
            - 接口  View.OnTouchLisener
@@ -43,15 +44,15 @@
            - 接口 ：View.OnLongClickListener
         小案例： 通过长按图片 设置手机壁纸 
        3. 三种监听事件的回调顺序：  触摸--》长按 ---》点击
-      
-
-     * 按键事件
+```
+#### 按键事件
+```
          它是实现KeyEvent.CallBack接口 回调方法
        - onKeyDown() //按键事件
          它是Activity定义的方法
        - onBackPressed()//按下返回键
        - 小案例： 再按一次退出系统   两秒钟之内按返回键退出系统
-
+```
     
 ## 二、高级UI控件
 
