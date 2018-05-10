@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 图片选择器，依据控件的不同状态赋予控件相应属性不同的图片
+         当被选择state_checked="true" 状态  则赋予player_btn_volume_selected.png
+     其 他状态   则赋予player_btn_metu.png
+    xml解析：  dom 、sax 、pull解析
+       
+     -->
+    <item android:state_checked="true" android:drawable="@drawable/player_btn_volume_selected"></item>
+    <item android:state_pressed="true" android:drawable="@drawable/player_btn_volume_selected"></item>
+    <item android:drawable="@drawable/player_btn_metu"></item>
+</selector>

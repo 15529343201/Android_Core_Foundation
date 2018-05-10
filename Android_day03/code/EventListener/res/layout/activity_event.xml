@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_yellow"
+    android:orientation="vertical"
+    tools:context=".EventActivity" >
+
+    <!-- CheckBox实现复选 ， 明密文切换 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/info_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPassword"
+            android:text="android" />
+
+        <CheckBox
+            android:id="@+id/change_info_chx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="明文显示" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray" >
+    </View>
+    <!-- RadioGroup 与 RadioButton 单选 ，实现字符集切换 -->
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="GBK" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="UTF8" />
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="ISO8859" />
+    </RadioGroup>
+    
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/darker_gray" >
+    </View>
+    <!-- 通过Spinner 下来选择 天气 
+     entries: 下拉的条目 ，下拉项
+    -->
+    <Spinner 
+        android:id="@+id/weather_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/weathers"
+        
+        />
+  <ImageView 
+      android:id="@+id/paper_iv"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:src="@drawable/girl1"
+      />
+</LinearLayout>
