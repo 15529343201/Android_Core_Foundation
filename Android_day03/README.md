@@ -115,7 +115,8 @@
 ```
 
 
-重点：
+## 重点：
+
   1. 事件类型及监听
     
         1. 复选 :
@@ -144,10 +145,10 @@
   
 
 练习：
-   1. ToggleButton（选择器）
-作业：
-   gridView
-  android:numColumns设置列数
+   1. ToggleButton（选择器）<br>
+作业：<br>
+   gridView<br>
+  android:numColumns设置列数<br>
 
 
 
